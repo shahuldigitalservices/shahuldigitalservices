@@ -1,3 +1,2 @@
-document.getElementById('themeBtn').onclick=function(){
-document.body.classList.toggle('dark');
-};
+
+document.getElementById('theme').onclick=()=>document.body.classList.toggle('dark');

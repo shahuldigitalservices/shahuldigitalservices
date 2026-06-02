@@ -1,11 +1,19 @@
-body{font-family:Arial,sans-serif;margin:0;background:#f4f7fb}
-nav{display:flex;justify-content:space-between;padding:15px 20px;background:#0088cc;color:white}
-.logo{font-size:28px;font-weight:bold}
-.hero{background:linear-gradient(135deg,#0088cc,#36aeea);color:white;text-align:center;padding:100px 20px}
-.btn{background:white;color:#0088cc;padding:12px 20px;border-radius:30px;text-decoration:none}
-section{padding:40px 20px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
-.card{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:24px}
-.dark{background:#111;color:white}
-.dark .card{background:#222}
+
+:root{--bg:#fff;--text:#111}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.nav{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);padding:18px 6%;display:flex;justify-content:space-between}
+.nav a{text-decoration:none;margin:0 8px;color:#222}
+.logo{font-size:32px;font-weight:800;color:#229ED9}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#229ED9,#6dd5fa);color:white}
+.hero h1{font-size:70px}
+.btn{padding:14px 24px;border-radius:40px;background:#229ED9;color:white;text-decoration:none;display:inline-block;margin:5px}
+.darkbtn{background:#111827}
+.section{padding:80px 8%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card,.glass{padding:25px;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.08);background:white}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
+.stats div{background:#229ED9;color:white;padding:25px;border-radius:20px}
+.floatwa,.floattg{position:fixed;right:20px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;text-decoration:none}
+.floatwa{bottom:90px;background:#25D366}
+.floattg{bottom:20px;background:#229ED9}
+.dark{--bg:#111827;--text:#fff}
