@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDS - Shahul Digital Services</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f7fc;color:#222}
+header{
+background:linear-gradient(135deg,#001845,#003b95);
+color:#fff;
+padding:20px;
+position:sticky;top:0;z-index:1000
+}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:auto}
+.logo{font-size:32px;font-weight:700;color:#ffd700}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+.hero{
+min-height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#001845,#0046b8);
+color:white;
+padding:30px;
+}
+.hero h1{font-size:3rem;margin-bottom:15px}
+.hero p{max-width:700px;font-size:1.2rem;margin-bottom:25px}
+.btn{
+display:inline-block;padding:14px 25px;border-radius:30px;
+text-decoration:none;color:white;margin:8px;font-weight:bold
+}
+.whatsapp{background:#25D366}
+.telegram{background:#229ED9}
+.section{max-width:1200px;margin:auto;padding:80px 20px}
+.title{text-align:center;font-size:2.2rem;color:#002f7a;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{
+background:white;padding:25px;border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s
+}
+.card:hover{transform:translateY(-8px)}
+.card i{font-size:42px;color:#0046b8;margin-bottom:15px}
+.about{
+background:white;border-radius:20px;padding:30px;
+box-shadow:0 8px 20px rgba(0,0,0,.08)
+}
+.contact{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px
+}
+.contact-card{
+background:white;padding:25px;border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08)
+}
+.float-btn{
+position:fixed;right:20px;width:60px;height:60px;
+border-radius:50%;display:flex;align-items:center;
+justify-content:center;color:white;font-size:30px;
+text-decoration:none;z-index:999
+}
+.float-wa{bottom:90px;background:#25D366}
+.float-tg{bottom:20px;background:#229ED9}
+footer{
+background:#001845;color:white;text-align:center;
+padding:25px;margin-top:40px
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">SDS</div>
+<div>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Shahul Digital Services</h1>
+<p>Professional assistance for EPFO, Passport, PCC, Resume Creation, Online Applications, Government Services and Digital Documentation.</p>
+<div>
+<a class="btn whatsapp" href="https://wa.me/message/TWGZ6CA2QMPOF1">WhatsApp</a>
+<a class="btn telegram" href="https://t.me/+JNMsFlLFF9gxNjE1">Telegram</a>
+</div>
+</section>
+
+<section id="services" class="section">
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card"><i class="fas fa-shield-alt"></i><h3>EPFO Services</h3></div>
+<div class="card"><i class="fas fa-passport"></i><h3>Passport Assistance</h3></div>
+<div class="card"><i class="fas fa-file-signature"></i><h3>PCC Assistance</h3></div>
+<div class="card"><i class="fas fa-user-tie"></i><h3>Resume Creation</h3></div>
+<div class="card"><i class="fas fa-laptop"></i><h3>Online Applications</h3></div>
+<div class="card"><i class="fas fa-landmark"></i><h3>Government Services</h3></div>
+<div class="card"><i class="fas fa-folder-open"></i><h3>Document Assistance</h3></div>
+<div class="card"><i class="fas fa-id-card"></i><h3>PAN & ID Guidance</h3></div>
+</div>
+</section>
+
+<section id="about" class="section">
+<h2 class="title">About SDS</h2>
+<div class="about">
+<p>Shahul Digital Services (SDS) helps individuals complete essential digital and document-related services quickly and conveniently. We focus on reliable assistance, easy communication, and customer support through WhatsApp and Telegram.</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Why Choose Us?</h2>
+<div class="grid">
+<div class="card"><i class="fas fa-clock"></i><h3>Fast Support</h3></div>
+<div class="card"><i class="fas fa-mobile-alt"></i><h3>Mobile Friendly</h3></div>
+<div class="card"><i class="fas fa-headset"></i><h3>Direct Assistance</h3></div>
+<div class="card"><i class="fas fa-check-circle"></i><h3>Reliable Service</h3></div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2 class="title">Contact Us</h2>
+<div class="contact">
+<div class="contact-card">
+<h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+<p>Quick support through WhatsApp.</p>
+</div>
+<div class="contact-card">
+<h3><i class="fab fa-telegram"></i> Telegram</h3>
+<p>Reach us anytime through Telegram.</p>
+</div>
+<div class="contact-card">
+<h3><i class="fas fa-envelope"></i> Email</h3>
+<p>shahuldigitalservices@gmail.com</p>
+</div>
+</div>
+</section>
+
+<a class="float-btn float-wa" href="https://wa.me/message/TWGZ6CA2QMPOF1"><i class="fab fa-whatsapp"></i></a>
+<a class="float-btn float-tg" href="https://t.me/+JNMsFlLFF9gxNjE1"><i class="fab fa-telegram"></i></a>
+
+<footer>
+© 2026 Shahul Digital Services (SDS) | Professional Digital Assistance
+</footer>
+
+</body>
+</html>
