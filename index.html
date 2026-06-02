@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SDS - Shahul Digital Services</title>
+<title>Shahul Digital Services (SDS)</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
     background:#f4f6f9;
     color:#333;
 }
@@ -22,32 +24,14 @@ header{
 
 header h1{
     margin:0;
+    font-size:2rem;
 }
 
-.hero{
-    text-align:center;
-    padding:30px 20px;
+header p{
+    margin-top:10px;
 }
 
-.btn{
-    display:inline-block;
-    margin:10px;
-    padding:14px 24px;
-    text-decoration:none;
-    color:white;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.whatsapp{
-    background:#25D366;
-}
-
-.telegram{
-    background:#0088cc;
-}
-
-.section{
+.container{
     max-width:900px;
     margin:auto;
     padding:20px;
@@ -56,13 +40,37 @@ header h1{
 .card{
     background:white;
     padding:20px;
-    margin-bottom:15px;
+    margin:20px 0;
     border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-ul{
-    padding-left:20px;
+.services ul{
+    list-style:none;
+    padding:0;
+}
+
+.services li{
+    padding:8px 0;
+}
+
+.social{
+    text-align:center;
+    margin-top:20px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:15px;
+    color:#333;
+}
+
+.social i{
+    font-size:60px;
+}
+
+.contact{
+    text-align:center;
 }
 
 footer{
@@ -70,88 +78,59 @@ footer{
     color:white;
     text-align:center;
     padding:15px;
-    margin-top:20px;
+    margin-top:30px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>SDS - Shahul Digital Services</h1>
-    <p>Fast, Simple & Reliable Online Assistance Services</p>
+    <h1>Shahul Digital Services (SDS)</h1>
+    <p>Your Trusted Digital Service Partner</p>
 </header>
 
-<div class="hero">
-    <a href="https://wa.me/message/TWGZ6CA2QMPOF1" class="btn whatsapp">
-        💬 Chat on WhatsApp
-    </a>
-
-    <a href="https://t.me/+JNMsFlLFF9gxNjE1" class="btn telegram">
-        📢 Join Telegram
-    </a>
-</div>
-
-<div class="section">
-
-    <div class="card">
-        <h2>About SDS</h2>
-        <p>
-            SDS (Shahul Digital Services) provides online assistance for EPFO,
-            passport services, online applications, document services,
-            resume creation and digital support.
-        </p>
-    </div>
+<div class="container">
 
     <div class="card">
         <h2>Our Services</h2>
-        <ul>
-            <li>EPFO / PF Assistance</li>
-            <li>UAN Activation Guidance</li>
-            <li>PF Passbook Download</li>
-            <li>PF Claim Guidance</li>
-            <li>Passport Application Guidance</li>
-            <li>PCC Assistance</li>
-            <li>Online Form Filling</li>
-            <li>Job Application Support</li>
-            <li>Resume / CV Creation</li>
-            <li>PDF Editing & Conversion</li>
-            <li>Document Scanning</li>
-            <li>Email Creation</li>
-            <li>WhatsApp Business Setup</li>
-            <li>Ticket Booking Assistance</li>
-            <li>Basic Website Creation</li>
-        </ul>
+        <div class="services">
+            <ul>
+                <li>✅ EPFO Services</li>
+                <li>✅ Passport Assistance</li>
+                <li>✅ PCC Assistance</li>
+                <li>✅ Resume Creation</li>
+                <li>✅ Online Applications</li>
+                <li>✅ Government Services Guidance</li>
+                <li>✅ Document Assistance</li>
+                <li>✅ Digital Form Filling</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="card">
-        <h2>Why Choose SDS?</h2>
-        <ul>
-            <li>Fast Response</li>
-            <li>Mobile-Friendly Support</li>
-            <li>Simple Process</li>
-            <li>Online Assistance</li>
-            <li>WhatsApp Support Available</li>
-        </ul>
+    <div class="card social">
+        <h2>Connect With Us</h2>
+
+        <a href="https://wa.me/message/TWGZ6CA2QMPOF1" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <p>WhatsApp</p>
+        </a>
+
+        <a href="https://t.me/+JNMsFlLFF9gxNjE1" target="_blank">
+            <i class="fab fa-telegram"></i>
+            <p>Telegram</p>
+        </a>
     </div>
 
-    <div class="card">
-        <h2>Contact Us</h2>
-        <p>Need help? Contact us directly through WhatsApp or Telegram.</p>
-
-        <a href="https://wa.me/message/TWGZ6CA2QMPOF1" class="btn whatsapp">
-            WhatsApp
-        </a>
-
-        <a href="https://t.me/+JNMsFlLFF9gxNjE1" class="btn telegram">
-            Telegram
-        </a>
+    <div class="card contact">
+        <h2>Contact</h2>
+        <p>📧 shahuldigitalservices@gmail.com</p>
+        <p>📱 WhatsApp & Telegram Support Available</p>
     </div>
 
 </div>
 
 <footer>
-    © 2026 SDS - Shahul Digital Services. All Rights Reserved.
+    © 2026 Shahul Digital Services (SDS). All Rights Reserved.
 </footer>
 
 </body>
