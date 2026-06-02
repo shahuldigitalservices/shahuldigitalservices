@@ -4,96 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SDS - Shahul Digital Services</title>
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#f5f7fb;color:#222}
-header{background:linear-gradient(135deg,#001b5e,#003ea8);color:#fff;padding:20px}
-nav{display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:40px;font-weight:bold;color:#ffd400}
-.hero{display:flex;flex-direction:column;padding:50px 20px;text-align:center}
-.hero h1{font-size:48px;margin-bottom:15px}
-.hero p{font-size:20px;margin-bottom:25px}
-.btn{display:inline-block;padding:14px 24px;border-radius:30px;text-decoration:none;color:#fff;margin:8px}
-.whatsapp{background:#25D366}
-.telegram{background:#229ED9}
-.section{padding:50px 20px;max-width:1200px;margin:auto}
-.section h2{text-align:center;margin-bottom:30px;font-size:38px;color:#002b7f}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 3px 10px rgba(0,0,0,.1);text-align:center}
-.card i{font-size:40px;color:#003ea8;margin-bottom:15px}
-.contact-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.contact-card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
-footer{background:#001b5e;color:#fff;text-align:center;padding:20px;margin-top:30px}
-</style>
 </head>
 <body>
-
-<header>
 <nav>
 <div class="logo">SDS</div>
-<div>Shahul Digital Services</div>
+<button id="themeBtn">🌙</button>
 </nav>
 
-<div class="hero">
-<h1>Shahul Digital Services (SDS)</h1>
-<p>Your Trusted Digital Service Partner</p>
-<div>
-<a class="btn whatsapp" href="https://wa.me/message/TWGZ6CA2QMPOF1" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-<a class="btn telegram" href="https://t.me/+JNMsFlLFF9gxNjE1" target="_blank"><i class="fab fa-telegram"></i> Message on Telegram</a>
-</div>
-</div>
+<header class="hero">
+<h1>Shahul Digital Services</h1>
+<p>EPFO • Passport • PCC • Online Applications</p>
+<a class="btn" href="https://wa.me/message/TWGZ6CA2QMPOF1">Contact on WhatsApp</a>
 </header>
 
-<section class="section">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><i class="fas fa-shield-alt"></i><h3>EPFO Services</h3></div>
-<div class="card"><i class="fas fa-passport"></i><h3>Passport Assistance</h3></div>
-<div class="card"><i class="fas fa-file-contract"></i><h3>PCC Assistance</h3></div>
-<div class="card"><i class="fas fa-user-tie"></i><h3>Resume Creation</h3></div>
-<div class="card"><i class="fas fa-laptop"></i><h3>Online Applications</h3></div>
-<div class="card"><i class="fas fa-building-columns"></i><h3>Government Services</h3></div>
-<div class="card"><i class="fas fa-folder-open"></i><h3>Document Assistance</h3></div>
-<div class="card"><i class="fas fa-keyboard"></i><h3>Digital Form Filling</h3></div>
+<section>
+<h2>Services</h2>
+<div class="cards">
+<div class="card">EPFO Services</div>
+<div class="card">Passport Assistance</div>
+<div class="card">PCC Assistance</div>
+<div class="card">Resume Creation</div>
+<div class="card">Online Applications</div>
+<div class="card">Document Assistance</div>
 </div>
 </section>
 
-<section class="section">
-<h2>Connect With Us</h2>
-<div class="contact-box">
-<div class="contact-card">
-<h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
-<p>Fast support and updates.</p>
-<br>
-<a class="btn whatsapp" href="https://wa.me/message/TWGZ6CA2QMPOF1">Chat Now</a>
-</div>
-<div class="contact-card">
-<h3><i class="fab fa-telegram"></i> Telegram</h3>
-<p>Message us anytime.</p>
-<br>
-<a class="btn telegram" href="https://t.me/+JNMsFlLFF9gxNjE1">Message Now</a>
-</div>
-</div>
-</section>
-
-<section class="section">
-<h2>Contact</h2>
-<div class="contact-box">
-<div class="contact-card">
-<h3>Email</h3>
-<p>shahuldigitalservices@gmail.com</p>
-</div>
-<div class="contact-card">
-<h3>Support</h3>
-<p>WhatsApp & Telegram Available</p>
-</div>
-</div>
-</section>
-
-<footer>
-© 2026 Shahul Digital Services (SDS). All Rights Reserved.
-</footer>
-
+<a class="float-wa" href="https://wa.me/message/TWGZ6CA2QMPOF1"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
 </body>
 </html>
