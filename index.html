@@ -1,63 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shahul Digital Services (SDS)</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#0b1220;color:#fff}
-.hero{background:linear-gradient(135deg,#0ea5e9,#1d4ed8);padding:80px 20px;text-align:center}
-.hero h1{font-size:42px}
-.hero p{margin:10px 0 20px}
-.btn{display:inline-block;padding:12px 20px;border-radius:30px;text-decoration:none;color:#fff;margin:5px}
-.wa{background:#25D366}.tg{background:#229ED9}
-.section{padding:30px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
-.card{background:#16233d;padding:20px;border-radius:15px;text-align:center}
-.card i{font-size:32px;color:#38bdf8;margin-bottom:10px}
-.search{width:100%;padding:12px;border-radius:10px;border:none;margin-bottom:20px}
-footer{text-align:center;padding:20px;background:#050b16}
-.float{position:fixed;right:15px;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none}
-.waf{bottom:80px;background:#25D366}.tgf{bottom:15px;background:#229ED9}
-</style>
-</head>
-<body>
-<div class="hero">
-<h1>Shahul Digital Services</h1>
-<p>EPFO • Passport • PAN • Aadhaar • Online Services</p>
-<a class="btn wa" href="https://wa.me/message/TWGZ6CA2QMPOF1">WhatsApp</a>
-<a class="btn tg" href="https://t.me/+JNMsFlLFF9gxNjE1">Telegram</a>
+const services = {
+
+epfo:{
+title:"EPFO Services",
+about:`PF Advance Claim
+PF Final Settlement
+Pension Services
+KYC Update
+UAN Activation
+Passbook Download`,
+
+info:`Advance Claim usually settles within 1-20 days.
+Final Settlement usually settles within 10-30 days.`,
+
+required:`UAN Number
+EPFO Password
+OTP on Registered Mobile`
+},
+
+passport:{
+title:"Passport Services",
+about:`Fresh Passport
+Passport Renewal
+Minor Passport
+Police Clearance Certificate (PCC)`,
+
+info:`Normal Passport Fee and Tatkal Passport Fee are charged as per current Passport Seva rules.
+Tatkal processing is faster than normal processing.`,
+
+required:`Aadhaar Card
+PAN Card
+Mobile Number
+Email Address`
+},
+
+pan:{
+title:"PAN Card Services",
+about:`New PAN Application
+PAN Correction
+Duplicate PAN
+e-PAN Download`,
+
+info:`PAN services are processed through authorized government systems.`,
+
+required:`Aadhaar Card
+Mobile Number
+Passport Photo (if required)`
+},
+
+aadhaar:{
+title:"Aadhaar Services",
+about:`Address Update
+Name Correction
+DOB Correction
+Mobile Number Update Guidance`,
+
+info:`Some Aadhaar services require visiting an Aadhaar Enrollment Center.`,
+
+required:`Aadhaar Number
+Supporting Documents`
+},
+
+banking:{
+title:"Banking Services",
+about:`NRE Account Information
+NRO Account Information
+BSBDA Account Information
+Net Banking Assistance
+Mobile Banking Setup`,
+
+info:`Bank charges and requirements vary depending on the bank.`,
+
+required:`Identity Proof
+Mobile Number
+Bank Account Details`
+},
+
+visa:{
+title:"Visa Services",
+about:`Saudi Work Visa Guidance
+Visit Visa Information
+eVisa Information
+Document Verification`,
+
+info:`Processing time depends on embassy and visa type.`,
+
+required:`Passport
+Photograph
+Supporting Documents`
+},
+
+education:{
+title:"Education Services",
+about:`Distance Education Guidance
+Online Admissions
+Certificate Verification
+Course Information`,
+
+info:`Admission fees and eligibility vary by institution.`,
+
+required:`Previous Educational Certificates`
+},
+
+jobs:{
+title:"Job Services",
+about:`Resume Creation
+Online Job Applications
+Gulf Job Guidance
+Interview Preparation`,
+
+info:`Job availability depends on employer requirements.`,
+
+required:`Resume
+Certificates
+ID Documents`
+},
+
+documents:{
+title:"Document Services",
+about:`PDF Conversion
+Scanning
+Printing Assistance
+Online Registration`,
+
+info:`Most services are completed the same day.`,
+
+required:`Original Documents`
+}
+
+};
+
+function openService(service){
+
+const s = services[service];
+
+document.getElementById("title").innerHTML = s.title;
+
+document.getElementById("content").innerHTML = `
+<h3>About</h3>
+<p>${s.about.replaceAll('\n','<br>')}</p>
+
+<h3>Information</h3>
+<p>${s.info.replaceAll('\n','<br>')}</p>
+
+<h3>Required Documents</h3>
+<p>${s.required.replaceAll('\n','<br>')}</p>
+
+<br>
+
+<a href="https://wa.me/message/TWGZ6CA2QMPOF1"
+style="background:#25D366;color:white;padding:10px 20px;border-radius:10px;text-decoration:none;">
+Contact on WhatsApp
+</a>
+`;
+
+document.getElementById("modal").style.display="flex";
+}
+<div class="card" onclick="openService('epfo')">
+EPFO Services
 </div>
 
-<div class="section">
-<input class="search" placeholder="Search Services">
-<div class="grid">
-<div class="card"><i class="fas fa-building-columns"></i><h3>EPFO Services</h3></div>
-<div class="card"><i class="fas fa-passport"></i><h3>Passport Services</h3></div>
-<div class="card"><i class="fas fa-id-card"></i><h3>PAN Card</h3></div>
-<div class="card"><i class="fas fa-address-card"></i><h3>Aadhaar Services</h3></div>
-<div class="card"><i class="fas fa-file"></i><h3>Online Forms</h3></div>
-<div class="card"><i class="fas fa-university"></i><h3>Banking Help</h3></div>
-<div class="card"><i class="fas fa-plane"></i><h3>Visa Assistance</h3></div>
-<div class="card"><i class="fas fa-mobile-screen"></i><h3>Digital Services</h3></div>
-<div class="card"><i class="fas fa-file-pdf"></i><h3>Document Services</h3></div>
-<div class="card"><i class="fas fa-graduation-cap"></i><h3>Education Services</h3></div>
-<div class="card"><i class="fas fa-money-bill"></i><h3>Bill Payments</h3></div>
-<div class="card"><i class="fas fa-briefcase"></i><h3>Job Applications</h3></div>
-</div>
+<div class="card" onclick="openService('passport')">
+Passport Services
 </div>
 
-<div class="section" style="text-align:center">
-<h2>Contact</h2>
-<p>Contact via WhatsApp and Telegram</p>
-<p>Email: shahuldigitalservices@gmail.com</p>
+<div class="card" onclick="openService('pan')">
+PAN Card Services
 </div>
 
-<a class="float waf" href="https://wa.me/message/TWGZ6CA2QMPOF1"><i class="fab fa-whatsapp"></i></a>
-<a class="float tgf" href="https://t.me/+JNMsFlLFF9gxNjE1"><i class="fab fa-telegram"></i></a>
-
-<footer>© Shahul Digital Services (SDS)</footer>
-</body>
-</html>
+<div class="card" onclick="openService('aadhaar')">
+Aadhaar Services
+</div>
